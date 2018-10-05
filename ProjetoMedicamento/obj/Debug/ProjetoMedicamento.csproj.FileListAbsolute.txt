@@ -1,0 +1,13 @@
+F:\backup\Documentos\IFSP\Quarto Semestre\Estrutura de Dados 2\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\bin\Debug\ProjetoMedicamento.exe.config
+F:\backup\Documentos\IFSP\Quarto Semestre\Estrutura de Dados 2\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\bin\Debug\ProjetoMedicamento.exe
+F:\backup\Documentos\IFSP\Quarto Semestre\Estrutura de Dados 2\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\bin\Debug\ProjetoMedicamento.pdb
+F:\backup\Documentos\IFSP\Quarto Semestre\Estrutura de Dados 2\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\obj\Debug\ProjetoMedicamento.csprojAssemblyReference.cache
+F:\backup\Documentos\IFSP\Quarto Semestre\Estrutura de Dados 2\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\obj\Debug\ProjetoMedicamento.csproj.CoreCompileInputs.cache
+F:\backup\Documentos\IFSP\Quarto Semestre\Estrutura de Dados 2\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\obj\Debug\ProjetoMedicamento.exe
+F:\backup\Documentos\IFSP\Quarto Semestre\Estrutura de Dados 2\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\obj\Debug\ProjetoMedicamento.pdb
+C:\Users\aluno\Desktop\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\bin\Debug\ProjetoMedicamento.exe.config
+C:\Users\aluno\Desktop\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\obj\Debug\ProjetoMedicamento.exe
+C:\Users\aluno\Desktop\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\obj\Debug\ProjetoMedicamento.pdb
+C:\Users\aluno\Desktop\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\bin\Debug\ProjetoMedicamento.exe
+C:\Users\aluno\Desktop\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\bin\Debug\ProjetoMedicamento.pdb
+C:\Users\aluno\Desktop\TPs\TPMedicamentos\codigo\ProjetoMedicamento\ProjetoMedicamento\obj\Debug\ProjetoMedicamento.csprojResolveAssemblyReference.cache
