@@ -75,15 +75,55 @@ namespace ProjetoMedicamento
                 else if (opc == "2")
                 {
                     Console.Clear();
+                    Console.WriteLine("Informe qual é o ID do medicamento que você gostaria de pesquisar.");
+                    Int32 id = Convert.ToInt32(Console.ReadLine());
 
-                    foreach (Medicamento medic in minhaListaMedicamentos.ListaMedicamentos)
+                    Console.Clear();
+                    Medicamento medicamento = minhaListaMedicamentos.pesquisar(new Medicamento(id, "1", "1"));
+
+                    if (minhaListaMedicamentos.Existe == true)
                     {
-                        Console.WriteLine(medic.toString());
+                        Console.WriteLine("Medicamento encontrado.");
                     }
+                    else
+                    {
+                        Console.WriteLine("Medicamento não existe na lista.");
+                    }
+                    minhaListaMedicamentos.Existe = false;
+                    Console.WriteLine("");
+                    Console.WriteLine(medicamento.toString());
                     Console.ReadKey();
                 }//OPC 2
                 else if (opc == "3")
                 {
+                    Console.Clear();
+                    Console.WriteLine("Informe qual é o ID do medicamento que você gostaria de pesquisar.");
+                    Int32 id = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Clear();
+                    Medicamento medicamento = minhaListaMedicamentos.pesquisar(new Medicamento(id, "1", "1"));
+                    foreach (Lote lot in minhaListaMedicamento.Lotes)
+                    {
+                        if (lot.Id.Equals(id))
+                        {
+                            lotParc = lot;
+                        }
+                    }
+
+                    if (minhaListaMedicamentos.Existe == true)
+                    {
+                        Console.WriteLine("Medicamento encontrado.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Medicamento não existe na lista.");
+                    }
+
+                    minhaListaMedicamentos.Existe = false;
+                    Console.WriteLine("");
+                    Console.WriteLine(medicamento.toString() +" "+lotParc.toString());
+                    Console.ReadKey();
+                    /*
                     Console.Clear();
                     foreach (Lote lot in minhaListaMedicamento.Lotes)
                     {
@@ -93,7 +133,7 @@ namespace ProjetoMedicamento
                             medicParc = medic;
                         }
                         Console.WriteLine(medicParc.toString() + " " + lot.toString());
-                    }
+                    }*/
                     Console.ReadKey();
                 }//OPC 3
                 else if (opc == "4")
@@ -111,9 +151,36 @@ namespace ProjetoMedicamento
 
                     minhaListaMedicamento.comprar(new Lote(id, qtde, venc));
 
+                    Console.Clear();
                     Console.WriteLine("Medicamento comprado sucesso.");
                     Console.ReadKey();
                 }//OPC 4
+                else if (opc == "5")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Informe qual é a quantidade a ser vendida ?");
+                    Int32 qtde = Convert.ToInt32(Console.ReadLine());
+
+                    if(minhaListaMedicamento.vender(qtde))
+                    {
+                        Console.WriteLine("Medicamento vendido com sucesso.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Erro ao vender o medicamento. Por favor tente novamente.");
+                    }
+                    Console.ReadKey();
+                }//OPC 5
+                else if (opc == "6")
+                {
+                    Console.Clear();
+
+                    foreach (Medicamento medic in minhaListaMedicamentos.ListaMedicamentos)
+                    {
+                        Console.WriteLine(medic.toString());
+                    }
+                    Console.ReadKey();
+                }//OPC 6
             }//DO
             while (opc != "0");
         }//MAIN

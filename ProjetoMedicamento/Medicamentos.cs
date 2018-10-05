@@ -10,13 +10,21 @@ namespace ProjetoMedicamento
     {
         #region ATRIBUTOS
         private List<Medicamento> listaMedicamentos;
+        private Boolean existe;
         #endregion
 
         #region PROPRIEDADES
+        public Boolean Existe
+        {
+            get { return this.existe; }
+            set { existe = value; }
+        }
+
         public List<Medicamento> ListaMedicamentos
         {
             get { return this.listaMedicamentos; }
         }
+
         #endregion
 
         #region CONSTRUTORES
@@ -55,6 +63,7 @@ namespace ProjetoMedicamento
                 if (medic.Equals(medicamento))
                 {
                     resultMedic = medic;
+                    existe = true;
                 }
             }
             return resultMedic;

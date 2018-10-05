@@ -88,10 +88,14 @@ namespace ProjetoMedicamento
         //A COMPLETAR
         public Boolean vender(Int32 qtde)
         {
+            Int32 id = 0;
             Int32 quant = 0;
             Boolean vendido = false;
 
-            foreach(Lote lot in Lotes)
+            Console.WriteLine("Informe qual é o ID do medicamento");
+            id = Convert.ToInt32(Console.ReadLine());
+
+            foreach (Lote lot in Lotes)
             {
                quant += Convert.ToInt32(lot.Qtde);
             }
