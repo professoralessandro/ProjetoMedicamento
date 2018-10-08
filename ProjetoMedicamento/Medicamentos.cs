@@ -43,9 +43,12 @@ namespace ProjetoMedicamento
         public Boolean deletar(Medicamento medicamento)
         {
             Boolean deletado = false;
+
+            Lote lotinho = new Lote();
+
             foreach(Medicamento medicamentinho in listaMedicamentos)
             {
-                if(medicamento.Id.Equals(0))
+                if(lotinho.Qtde == 0)
                 {
                     ListaMedicamentos.Remove(medicamento);
                     deletado = true;

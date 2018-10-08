@@ -90,28 +90,31 @@ namespace ProjetoMedicamento
         {
             Int32 id = 0;
             Int32 quant = 0;
+            Lote lotezinho = new Lote();
             Boolean vendido = false;
 
             Console.WriteLine("Informe qual é o ID do medicamento");
             id = Convert.ToInt32(Console.ReadLine());
 
+            Medicamentos medicamentos = new Medicamentos();
+
+            
+
             foreach (Lote lot in Lotes)
             {
                quant += Convert.ToInt32(lot.Qtde);
             }
-            if(quant < qtde)
-            {
                 //L -= qtde;
                 foreach (Lote lot in Lotes)
                 {
-                    lot.Qtde -= qtde;
-                    if(lot.Qtde == 0)
+                    lotezinho.Qtde -= qtde;
+                    if(lotezinho.Qtde == 0)
                     {
-                        Lotes.Dequeue();
+                        Lotes.Enqueue(lot);
                     }
                 }
                 vendido = true;
-            }
+
             return vendido;
         }//VENDER
 
